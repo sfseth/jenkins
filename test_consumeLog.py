@@ -7,7 +7,7 @@ with open('test.log') as file:
 		rspStrings.append(line[2])
 		print(line[2])
 
-def check_responses():
+def test_responses():
 	assert rspStrings.count('INFO') == 50
 	assert rspStrings.count('WARNING') == 11
 	assert rspStrings.count('ERROR') == 2
