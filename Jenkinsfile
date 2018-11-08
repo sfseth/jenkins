@@ -7,7 +7,7 @@ node {
    }
    stage('Test'){
    echo 'Test stage'
-   sh 'curl https://gist.githubusercontent.com/frnkdny/6ce32d992ec6576548e29312e08fb28b/raw/37252020df292befa7eb99a64da49e/test.log > test.log'
-   sh 'pytest test.log'
+   sh 'curl https://gist.githubusercontent.com/frnkdny/6ce32d992ec6576548e29312e08fb28b/raw/37252020df292befa7eb99a64da49e/test.log > /tmp/test.log'
+   sh 'pytest /tmp/test.log'
    } 
 }
