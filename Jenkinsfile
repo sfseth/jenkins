@@ -9,7 +9,8 @@ node {
    echo 'Test stage'
    sh 'curl https://gist.githubusercontent.com/frnkdny/6ce32d992ec6576548e29312e08fb28b/raw/37252020df292befa7eb99a64da49e/test.log > test.log'
    //sh 'pytest'
+   sh 'cp /var/jenkins_home/jobs/Pipelinejob/workspace@script/test_consumeLog.py .'
    //echo $WORKSPACE
-   sh 'ls -ltra $env.WORKSPACE'
+   sh 'ls -ltra'
    } 
 }
