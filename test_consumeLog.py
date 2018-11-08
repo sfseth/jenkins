@@ -10,4 +10,4 @@ with open('test.log') as file:
 def test_responses():
 	assert rspStrings.count('INFO') == 50
 	assert rspStrings.count('WARNING') == 11
-	assert rspStrings.count('ERROR') == 2
+	assert rspStrings.count('ERROR') == 3
