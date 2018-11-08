@@ -10,6 +10,6 @@ node {
    sh 'curl https://gist.githubusercontent.com/frnkdny/6ce32d992ec6576548e29312e08fb28b/raw/37252020df292befa7eb99a64da49e/test.log > test.log'
    //sh 'pytest'
    //echo $WORKSPACE
-   sh 'ls -ltra env.WORKSPACE'
+   sh 'ls -ltra $env.WORKSPACE'
    } 
 }
