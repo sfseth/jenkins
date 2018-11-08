@@ -1,5 +1,7 @@
 import csv
 
+
+# TODO: parameterize filename, turn file operations into function, handle response strings that are in diff position
 rspStrings = []
 with open('test.log') as file:
 	data = csv.reader(file, delimiter=' ')
