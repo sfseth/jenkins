@@ -13,6 +13,6 @@ node {
    sh 'cp /var/jenkins_home/jobs/Pipelinejob/workspace@script/test_consumeLog.py .'
    sh 'cp /var/jenkins_home/jobs/Pipelinejob/workspace@script/test.log .'
    sh 'ls -ltra'
-   sh 'pytest'
+   sh 'pytest test_consumeLog.py'
    } 
 }
